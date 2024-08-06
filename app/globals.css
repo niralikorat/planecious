@@ -2,32 +2,134 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Hero.css */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.video-desktop,
+.video-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-mobile {
+  display: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  height: 100%;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.hero-content p {
+  font-size: 1.5em;
+}
+
+@media (max-width: 767px) {
+  .video-desktop {
+    display: none;
+  }
+  
+  .video-mobile {
+    display: block;
+  }
+
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.section2{
+  background-color: #0A111F;
+  background-image: url("https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-bg-1.png");
+  background-position:center right;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+.bgPrimary{
+  background-color: #37ACC5;
+}
+.textThemeColor{
+  color: #37ACC5;
+}
+.triangle-right {
+  width: 0; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #37ACC5;
+}
+
+/* styles/globals.css */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/Qdbettercomicsansbold-511d8.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'CustomFont', sans-serif;
+}
+
+/* ExampleComponent.module.css */
+.example {
+  font-family: 'CustomFont', sans-serif;
+  font-size: 16px;
+}
+
+
+.bgPodcast{
+  background-image: url('https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-bg-2.png');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+
+.bgPodCastCard{
+  background-color: RGB(212, 255, 251);
+}
+
+.bgSection3{
+  background-image: url('https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-bg-3.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+@media only screen and (max-width: 600px){
+  .bgPodcast{
+    background-image: url('https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-bg-2.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
 }
