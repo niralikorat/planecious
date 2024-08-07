@@ -128,6 +128,12 @@ body {
   background-image: url('https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-bg-4.png');
   background-position: bottom right;
 }
+.gradientText{
+  color: #62D3AF;
+  background-image: linear-gradient(90deg, currentColor, #C475C5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @media only screen and (max-width: 600px){
   .bgPodcast{

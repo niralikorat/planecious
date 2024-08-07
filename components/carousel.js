@@ -58,9 +58,19 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
               loading="lazy"
             ></iframe>
           ) : isLinkedInUrl(video.url) ? (
-   
-            <p>hello</p>
-          ) : <p className="text-white">bye</p>}
+            <iframe
+              src={video.url}
+              height="600"
+              width="400"
+              frameborder="0"
+              // allowfullscreen=""
+              title="Embedded post"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="w-auto items-center"
+              loading="lazy"
+            ></iframe>
+          ) : null}
           <div className="flex flex-col items-start p-4 gap-4">
             <p className="text-start textThemeColor">{video.category}</p>
             <p className="text-black font-semibold text-md max-w-xs">
