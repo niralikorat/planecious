@@ -124,6 +124,10 @@ body {
   background-size: auto;
   background-position: center;
 }
+.bgSection3card{
+  background-image: url('https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-bg-4.png');
+  background-position: bottom right;
+}
 
 @media only screen and (max-width: 600px){
   .bgPodcast{
