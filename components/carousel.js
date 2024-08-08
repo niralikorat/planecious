@@ -54,7 +54,7 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-              className="w-auto items-center"
+              className="w-400 items-center"
               loading="lazy"
             ></iframe>
           ) : isLinkedInUrl(video.url) ? (
