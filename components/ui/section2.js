@@ -89,17 +89,18 @@ export default function Section2() {
         <p className='example -rotate-6'>COMMUNITY</p>
         <p className='font-semibold text-4xl text-white max-w-sm text-center'>Become a Volunteer in Our Community</p>
         {/* <CarouselComponent videoList={communityPosts} autoPlay={true} /> */}
+        <button className='bgPrimary px-10 py-4 rounded-3xl text-sm font-semibold text-white mt-2'>JOIN COMMUNITY</button>
       </div>
-      <section className='flex flex-col xl:flex-row h-[60vh]'>
+      <section className='flex flex-col lg:flex-row h-[60vh]'>
         <div className='flex flex-col w-auto'>
           <div className='flex flex-col gap-4 py-10 px-20 items-start'>
           <p className='font-semibold text-3xl text-black max-w-md  text-start'>Key to a More Eco-friendly world in 2022</p>
           <Link className='underline' href={'/'}>TAKE ACTION</Link>
           </div>
-          <div className='flex flex-col xl:flex-row '>
-          <img src='https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-masonry-img-2.jpg' className='w-auto max-w-[480px] xl:max-w-full 2xl:max-w-[680px] '/>
-          <div className='flex flex-col gap-4 justify-center items-start bgSection3card px-12 py-40  lg:px-20 2xl:px-28'>
-          <p className='font-semibold text-xl xl:text-2xl text-black  text-start gradientText'>The polar bear is the largest bear species, and the largest land carnivore </p>
+          <div className='flex flex-col lg:flex-row '>
+          <img src='https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-masonry-img-2.jpg' className='w-auto min-w-[480px] lg:min-w-[320px] xl:min-w-[480px] 2xl:min-w-[580px] 2xl:max-w-[780px] '/>
+          <div className='flex flex-col gap-4 justify-center items-start bgSection3card px-12 py-40 lg:py-20 xl:py-24 lg:px-12 xl:px-20 2xl:px-28'>
+          <p className='font-semibold text-xl xl:text-2xl text-black  text-start gradientText max-w-md'>The polar bear is the largest bear species, and the largest land carnivore </p>
           <Link className='underline' href={'/'}>TAKE ACTION</Link>
           </div>
           </div>
@@ -114,8 +115,8 @@ export default function Section2() {
 
         </div>
         <div className='flex flex-col  w-auto '>
-          <img src='https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-masonry-img-1.jpg' className='w-auto lg:max-w-[480px]'/>
-          <div className='flex flex-col gap-16 justify-center items-start  py-8 px-20 2xl:px-12 bg-orange-400 h-auto'>
+          <img src='https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-masonry-img-1.jpg' className='w-auto xl:max-w-[420px]   2xl:max-w-[480px]'/>
+          <div className='flex flex-col gap-16 justify-center items-start  py-8 xl:py-10 px-20 2xl:px-12 bg-orange-400 min-h-max'>
           <p className='font-semibold text-xl 2xl:text-2xl text-white  max-w-lg text-start'>Key to a More Eco-friendly world in 2022</p>
           <div className='flex flex-col gap-2 text-white'>
             <p className='example'>Abhishek Raj</p>
