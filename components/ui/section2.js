@@ -48,10 +48,10 @@ export default function Section2() {
       <div className='section2 py-24 px-4 md:px-12 flex flex-col text-white'>
         <div className='flex flex-col gap-8 justify-center items-center'>
           <p className='example text-xs text-center p-4 -rotate-12'>OUR MISSION</p>
-          <p className='text-4xl font-bold'>Saving Endangered Species is Crucial</p>
+          <p className='text-4xl font-bold text-center'>Saving Endangered Species is Crucial</p>
           <p>Lorem ipsum dolor sit amet, in audire fabulas cotidieque eos.</p>
         </div>
-        <div className='flex flex-wrap md:gap-16 lg:gap-20 xl:gap-28 justify-center items-center '>
+        <div className='flex flex-wrap gap-16 lg:gap-20 xl:gap-28 justify-center items-center '>
           {section2Data.map((data, index) => (
             <div key={index} className={`${index % 2 !== 0 && 'md:mt-40'} mt-12 flex flex-col justify-center items-center gap-4`}>
               <img src={data.imgUrl} className='w-[120px]' alt={data.title} />
@@ -64,15 +64,15 @@ export default function Section2() {
       </div>
 
       <div className='flex flex-col md:flex-row'>
-        <div className='flex flex-row items-center bgPrimary w-full md:w-3/4'>
-          <div className='flex flex-col text-white justify-center items-start gap-4 p-20 py-32'>
+        <div className='flex flex-row items-center bgPrimary w-full lg:w-2/5'>
+          <div className='flex flex-col text-white justify-center items-start gap-4 px-10 lg:px-20 py-32 '>
             <p className='example -rotate-6'>WHALE LOVE</p>
-            <p className='text-4xl font-semibold max-w-xl'>New Research Reveals That Whales and Dolphins Have a Rich Social Life</p>
+            <p className='text-4xl font-semibold '>New Research Reveals That Whales and Dolphins Have a Rich Social Life</p>
             <button className='bg-white px-10 py-4 rounded-3xl text-sm font-semibold text-black mt-2'>VIEW MORE</button>
           </div>
           <div className='triangle-right'></div>
         </div>
-        <img src={'/sec3img.jpg'} className='w-full md:w-5/6' alt='img' />
+        <img src={'/sec3img.jpg'} className='w-full lg:w-3/5' alt='img' />
       </div>
 
       <div className='flex flex-col md:flex-row bgPodcast p-4 md:px-20 py-32 justify-between gap-20'>
@@ -91,16 +91,16 @@ export default function Section2() {
         {/* <CarouselComponent videoList={communityPosts} autoPlay={true} /> */}
         <button className='bgPrimary px-10 py-4 rounded-3xl text-sm font-semibold text-white mt-2'>JOIN COMMUNITY</button>
       </div>
-      <section className='flex flex-col lg:flex-row justify-evenly'>
+      <section className='flex flex-col lg:flex-row justify-evenly h-full lg:h-[70vh]'>
         <div className='flex flex-col w-full'>
-          <div className='flex flex-col gap-4 py-10 px-20 items-start'>
+          <div className='flex flex-col gap-4 py-10 px-10 lg:px-20 items-start h-full lg:h-[24vh]'>
           <p className='font-semibold text-3xl text-black max-w-md  text-start'>Key to a More Eco-friendly world in 2022</p>
           <Link className='underline' href={'/'}>TAKE ACTION</Link>
           </div>
-          <div className='flex flex-col lg:flex-row h-4/5'>
-          <img src='https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-masonry-img-2.jpg' className='w-8/12'/>
-          <div className='flex flex-col gap-4 justify-center items-start bgSection3card px-20 py-8 w-1/2 '>
-          <p className='font-semibold text-xl xl:text-2xl text-black  text-start gradientText '>The polar bear is the largest bear species, and the largest land carnivore </p>
+          <div className='flex flex-col lg:flex-row w-screen lg:w-auto lg:h-[46vh]'>
+          <img src='https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-masonry-img-2.jpg' className='w-full lg:w-1/2'/>
+          <div className='flex flex-col gap-4 justify-center items-start bgSection3card px-10 lg:px-20 py-20 lg:py-8 w-full lg:w-1/2 '>
+          <p className='font-semibold text-2xl xl:text-3xl text-black  text-start gradientText max-w-md'>The polar bear is the largest bear species, and the largest land carnivore </p>
           <Link className='underline' href={'/'}>TAKE ACTION</Link>
           </div>
           </div>
@@ -114,9 +114,9 @@ export default function Section2() {
         
 
         </div> */}
-        <div className='flex flex-col  justify-evenly'>
-          <img src='https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-masonry-img-1.jpg' className=''/>
-          <div className='flex flex-col gap-16 justify-center items-start  py-10  px-12  bg-orange-400 '>
+        <div className='flex flex-col  h-[70vh]'>
+          <img src='https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-masonry-img-1.jpg' className='h-1/2'/>
+          <div className='flex flex-col gap-16 justify-center items-start  py-10  px-12  bg-orange-400 h-1/2'>
           <p className='font-semibold text-xl 2xl:text-2xl text-white  max-w-lg text-start'>Key to a More Eco-friendly world in 2022</p>
           <div className='flex flex-col gap-2 text-white'>
             <p className='example'>Abhishek Raj</p>
