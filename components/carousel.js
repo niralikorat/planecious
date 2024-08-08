@@ -24,11 +24,11 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
     <Carousel
       additionalTransfrom={0}
       arrows
-      autoPlay={autoPlay}
+      // autoPlay={autoPlay}
       autoPlaySpeed={2500}
       centerMode={false}
-      className="flex flex-row gap-4"
-      containerClass="container-with-dots"
+      className="flex flex-row gap-8"
+      containerClass="w-full"
       draggable
       focusOnSelect={true}
       infinite
@@ -45,7 +45,7 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
       {videoList.map((video, index) => (
         <div
           key={index}
-          className="flex flex-col bgPodCastCard m-4 w-auto h-[480px]"
+          className="flex flex-col bgPodCastCard m-4  h-auto"
         >
           {isYouTubeUrl(video.url) ? (
             <iframe
@@ -54,7 +54,7 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-              className="w-400 items-center"
+              className="items-center"
               loading="lazy"
             ></iframe>
           ) : isLinkedInUrl(video.url) ? (
@@ -71,12 +71,12 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
               loading="lazy"
             ></iframe>
           ) : null}
-          <div className="flex flex-col items-start p-4 gap-4">
-            <p className="text-start textThemeColor">{video.category}</p>
-            <p className="text-black font-semibold text-md max-w-xs">
+          <div className="flex flex-col items-start p-8 gap-4">
+            <p className="text-start text-md textThemeColor">{video.category}</p>
+            <p className="text-black font-semibold text-lg ">
               {video.heading}
             </p>
-            <p className="text-gray-600 text-sm">{video.paragraph}</p>
+            <p className="text-gray-600 text-md">{video.paragraph}</p>
           </div>
         </div>
       ))}

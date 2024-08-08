@@ -75,12 +75,13 @@ export default function Section2() {
         <img src={'/sec3img.jpg'} className='w-full lg:w-3/5' alt='img' />
       </div>
 
-      <div className='flex flex-col md:flex-row bgPodcast p-4 md:px-20 py-32 justify-between gap-20'>
-        <div className='flex flex-col gap-4 items-start justify-center w-full '>
+      <div className='flex flex-col md:flex-row bgPodcast p-4 md:px-20 py-32  gap-10'>
+        <div className='flex flex-col gap-4 items-start justify-center  '>
           <p className='example -rotate-6'>funds</p>
           <p className='font-semibold text-4xl text-black'>Help & Donate</p>
           <p className='max-w-md'>Vim audire labores insolens ut. Iisque imperdiet sea at, ea est porro appart.</p>
           <button className='bgPrimary px-10 py-4 rounded-3xl text-sm font-semibold text-white mt-2'>VIEW MORE</button>
+          
         </div>
         <CarouselComponent videoList={videoData} autoPlay={true} />
       </div>
@@ -89,7 +90,8 @@ export default function Section2() {
         <p className='example -rotate-6'>COMMUNITY</p>
         <p className='font-semibold text-4xl text-white max-w-sm text-center'>Become a Volunteer in Our Community</p>
         {/* <CarouselComponent videoList={communityPosts} autoPlay={true} /> */}
-        <button className='bgPrimary px-10 py-4 rounded-3xl text-sm font-semibold text-white mt-2'>JOIN COMMUNITY</button>
+        {/* <button className='bgPrimary px-10 py-4 rounded-3xl text-sm font-semibold text-white mt-2'>JOIN COMMUNITY</button> */}
+        <Link className='bgPrimary px-10 py-4 rounded-3xl text-sm font-semibold text-white mt-2' href={'https://www.linkedin.com/groups/8147680/'}>JOIN COMMUNITY</Link>
       </div>
       <section className='flex flex-col lg:flex-row justify-evenly h-full lg:h-[70vh]'>
         <div className='flex flex-col w-full'>
@@ -116,7 +118,7 @@ export default function Section2() {
         </div> */}
         <div className='flex flex-col  h-[70vh]'>
           <img src='https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-masonry-img-1.jpg' className='h-1/2'/>
-          <div className='flex flex-col gap-16 justify-center items-start  py-10  px-12  bg-orange-400 h-1/2'>
+          <div className='flex flex-col gap-16 justify-center items-start  py-10  px-10 lg:px-20 bg-orange-400 h-1/2'>
           <p className='font-semibold text-xl 2xl:text-2xl text-white  max-w-lg text-start'>Key to a More Eco-friendly world in 2022</p>
           <div className='flex flex-col gap-2 text-white'>
             <p className='example'>Abhishek Raj</p>

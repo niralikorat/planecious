@@ -10,7 +10,7 @@ export default function NavBar() {
 
   return (
     <div className='flex flex-row justify-between mx-4 p-4'>
-      <img src="/planecious.svg" width={128} height={128} alt='Planecious Logo' />
+      <img src="/planecious.svg" alt='Planecious Logo' className='w-[128px] h-[128px]' />
       <div className='lg:flex lg:flex-row lg:gap-8 hidden lg:block'>
         {navs.map((nav, index) => (
           <a 
