@@ -102,7 +102,7 @@ body {
 /* ExampleComponent.module.css */
 .example {
   font-family: 'CustomFont', sans-serif;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 
@@ -142,4 +142,13 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
   }
+}
+
+
+.bgfooterText {
+  background: linear-gradient(to bottom, #fff, #efa556);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
