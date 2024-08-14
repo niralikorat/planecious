@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className='flex flex-row justify-between items-center bg-[#0a111f] text-white p-20' >
+    <div className='flex flex-col md:flex-row justify-between items-start md:items-center bg-[#0a111f] text-white p-4 md:p-20' >
         <div className='flex flex-col gap-8'>
         <div>
         <p className='example -rotate-6 text-5xl font-thin bgfooterText'>For causes </p>
@@ -11,7 +11,7 @@ export default function Footer() {
         </div>
            
             <div className='flex flex-col'>
-                <p>Let's Transform The World Together.</p>
+                <p>Lets Transform The World Together.</p>
                <p> And Live Life Cleaner By Making Earth Greener.</p>
             </div>
         </div>
@@ -50,7 +50,7 @@ export default function Footer() {
 </div>
 <div className='flex flex-col gap-4'>
 <img src="/planecious.svg" alt='Planecious Logo' className='w-[128px] ' />
-  <div className='flex flex-row gap-2'>
+  <div className='flex flex-row gap-4'>
 
        <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -17,7 +17,7 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
   useEffect(()=>{
     console.log(isLinkedInUrl(videoList[0].url))
 
-  },[])
+  },[videoList])
 
   videoList.includes()
   return (
