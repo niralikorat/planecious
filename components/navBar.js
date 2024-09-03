@@ -23,9 +23,9 @@ const Navbar = () => {
 
   return (
     <nav className=" fixed top-0 w-full z-40  border-gray-200 dark:border-gray-600">
-      <div className="flex flex-row items-center justify-between px-8 lg:px-16 py-4 bg-white">
+      <div className="flex flex-row items-center justify-between px-8 lg:px-20 py-4 bg-white">
         <Link href="/">
-          <Image src="/Planecious.svg" width={128} height={20} alt="Planecious Logo" className='scale-125' />
+          <Image src="/Planecious.svg" width={164} height={36} alt="Planecious Logo" className='' />
         </Link>
         <div className="lg:flex lg:flex-row lg:gap-8 hidden lg:block text-black">
           {navItems.map((item) => (
@@ -41,7 +41,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <Hamburger toggled={isOverlayOpen} toggle={setIsOverlayOpen}  />
+        <Hamburger toggled={isOverlayOpen} toggle={setIsOverlayOpen} size={20} />
       </div>
 
   
