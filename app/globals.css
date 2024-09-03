@@ -152,3 +152,97 @@ body {
   background-clip: text;
   color: transparent;
 }
+
+
+
+.bgAbout {
+  background: url('https://img.freepik.com/free-photo/plant-growing-from-soil_23-2151729547.jpg?t=st=1724405569~exp=1724409169~hmac=2a3862365b8e53beb52c185bdfc4545870f338c046675cea2f76db7cfa4665e3&w=1380');
+  background-attachment:fixed; /* This is optional since scroll is the default behavior */
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.textPrimary{
+  color: #37ACC5;
+}
+.bgFixed{
+ 
+  background: url('https://img.freepik.com/free-photo/hand-holding-young-plant_23-2148195515.jpg?t=st=1724409802~exp=1724413402~hmac=50ec8409503b58854b4ff42eef1a06e5c71aece6c59ad1363d48aa63cfb2b08d&w=1380');
+background-attachment: fixed;
+
+}
+
+.sideNav{
+  gap: 40px;
+}
+
+
+#hamburger {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+
+}
+
+#hamburger span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #005af0;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+}
+
+#hamburger span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+#hamburger span:nth-child(2) {
+  top: 21px;
+  transform-origin: left center;
+}
+
+#hamburger span:nth-child(3) {
+  top: 42px;
+  transform-origin: left center;
+}
+
+#hamburger.close span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+#hamburger.close span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+  transition: .1s;
+}
+
+#hamburger.close span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+
+.bgNav{
+  /* background: black; */
+
+
+  backdrop-filter: blur(40px);
+  position: relative;
+  animation-name: nav;
+  animation-duration: .5s;
+}
+
+@keyframes nav {
+  0%   { left: -1800px; top:0px;}
+
+  100%  {  left: 0; top: 0;}
+  
+}

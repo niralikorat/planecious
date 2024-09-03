@@ -54,7 +54,7 @@ export default function Footer() {
 
        <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
+        className="h-5 w-5 hover:scale-125 cursor-pointer"
         fill="currentColor"
         viewBox="0 0 24 24"
       >
@@ -63,7 +63,7 @@ export default function Footer() {
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
+        className="h-5 w-5 hover:scale-125 cursor-pointer"
         fill="currentColor"
         viewBox="0 0 24 24"
       >
@@ -72,7 +72,7 @@ export default function Footer() {
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
+        className="h-5 w-5 hover:scale-125 cursor-pointer"
         fill="currentColor"
         viewBox="0 0 24 24"
       >
@@ -81,7 +81,7 @@ export default function Footer() {
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
+        className="h-5 w-5 hover:scale-125 cursor-pointer"
         fill="currentColor"
         viewBox="0 0 24 24"
       >
