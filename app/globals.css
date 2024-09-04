@@ -237,7 +237,7 @@ background-attachment: fixed;
 .bgNav{
   /* background: black; */
 
-
+  -webkit-backdrop-filter: blur(40px);
   backdrop-filter: blur(40px);
   position: relative;
   animation-name: nav;
