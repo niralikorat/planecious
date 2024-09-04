@@ -50,7 +50,7 @@ const Navbar = () => {
       {isOverlayOpen && (
 
          
-          <div className='fixed  inset-x-0 bg-black  bg-opacity-70  h-full  p-8 md:p-20 text-white flex flex-col justify-between bgNav'>
+          <div className='fixed  inset-x-0 bg-black  bg-opacity-70  h-screen  p-8 md:p-20 text-white flex flex-col justify-between bgNav'>
           <div className='flex flex-col gap-4 md:gap-8 font-semibold'>
           <Link className= 'text-4xl md:text-5xl hover:font-bold hover:textPrimary' href="#">About</Link>
             <Link className= 'text-4xl md:text-5xl hover:font-bold hover:textPrimary' href="#">Services</Link>
