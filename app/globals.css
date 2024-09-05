@@ -258,7 +258,7 @@ background-attachment: fixed;
 
 .aboutSecIcons {
   animation-name: slideTop;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards; 
 }
 
