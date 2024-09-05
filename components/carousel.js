@@ -24,28 +24,29 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
     <Carousel
       additionalTransfrom={0}
       arrows
-      // autoPlay={autoPlay}
+      autoPlay={autoPlay}
       autoPlaySpeed={2500}
       centerMode={false}
       className=""
-      containerClass="w-full flex flex-row gap-8"
+      containerClass="w-full flex flex-row gap-8 mx-8"
       draggable
       focusOnSelect={true}
       infinite
-      itemClass="carousel-item-padding-40-px gap-4"
+      itemClass="carousel-item-padding-40-px"
       keyBoardControl
       minimumTouchDrag={80}
       pauseOnHover
       responsive={responsive}
       showDots={false}
+      ssr={true}
       slidesToSlide={1}
       swipeable
-      removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+      removeArrowOnDeviceType={["tablet", "mobile"]}
     >
       {videoList.map((video, index) => (
         <div
           key={index}
-          className="flex flex-col bg-white m-4 w-full "
+          className="flex flex-col bg-white m-4 w-full mx-20 "
         >
 
             <iframe
