@@ -1,10 +1,12 @@
 // Hero.js
 import React from 'react';
+import Navbar from '../navBar';
 
 
 const Hero = () => {
   return (
     <div className="hero-container">
+    {/* <Navbar/> */}
       <video 
         className="video-desktop" 
         autoPlay 
