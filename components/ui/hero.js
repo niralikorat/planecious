@@ -14,7 +14,7 @@ const Hero = () => {
         muted 
         playsInline
       >
-        <source src="/hero/heroLargeDevice.webm" type="video/mp4" />
+        <source src="/hero/heroLargeDevice.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <video 
@@ -24,7 +24,7 @@ const Hero = () => {
         muted 
         playsInline
       >
-        <source src="hero/heroMobile.webm" type="video/mp4" />
+        <source src="hero/heroMobile.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* <div className="hero-content">
