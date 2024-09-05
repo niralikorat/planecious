@@ -19,7 +19,7 @@ const Hero = () => {
       </video>
       <video 
         className="video-mobile" 
-        autoPlay 
+         
         loop 
         muted 
         playsInline
