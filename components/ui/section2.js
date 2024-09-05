@@ -7,10 +7,10 @@ import CarouselComponent from '../carousel';
 
 export default function Section2() {
   const section2Data = [
-    { imgUrl: 'https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-icon-1.png', title: 'Seals', detail: 'Assum aperiris his eam mea', button: '' },
-    { imgUrl: 'https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-icon-2.png', title: 'Owls', detail: 'Assum aperiris his eam mea', button: '' },
-    { imgUrl: 'https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-icon-3.png', title: 'Penguins', detail: 'Assum aperoros his eam mea', button: '' },
-    { imgUrl: 'https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-icon-1.png', title: 'Seals', detail: 'Assum aperiris his eam mea', button: '' }
+    { imgUrl: 'https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-icon-1.png', title: 'People', detail: 'Assum aperiris his eam mea', button: '' },
+    { imgUrl: 'https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-icon-2.png', title: 'Planet', detail: 'Assum aperiris his eam mea', button: '' },
+    { imgUrl: 'https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-icon-3.png', title: 'Sustainability', detail: 'Assum aperoros his eam mea', button: '' },
+    { imgUrl: 'https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-icon-1.png', title: 'Community', detail: 'Assum aperiris his eam mea', button: '' }
   ];
 
   const videoData = [
@@ -47,9 +47,14 @@ export default function Section2() {
     <div className='flex flex-col'>
       <div className='section2 py-24 px-4 md:px-12 flex flex-col text-white'>
         <div className='flex flex-col gap-8 justify-center items-center'>
-          <p className='example text-xs text-center p-4 -rotate-12'>OUR MISSION</p>
-          <p className='text-4xl font-bold text-center'>Saving Endangered Species is Crucial</p>
-          <p>Lorem ipsum dolor sit amet, in audire fabulas cotidieque eos.</p>
+          <p className='example text-xs text-center p-4 -rotate-12'>ABOUT US</p>
+          <p className='max-w-2xl text-center'>We represent a community of optimists who strive to make a difference. Planecious turns
+everyday environmental action and influencing into effortless ventures. Our initiative makes
+living more sustainably easier, enabling any person to create an impact and build towards the
+
+future the planet deserves.</p>
+          <p className='text-5xl font-bold text-center'>An initiative for change by aligning</p>
+         
         </div>
         <div className='flex flex-wrap gap-16 lg:gap-20 xl:gap-28 justify-center items-center '>
           {section2Data.map((data, index) => (
@@ -77,10 +82,11 @@ export default function Section2() {
 
       <div className='flex flex-col md:flex-row bgPodcast p-4 md:px-20 py-32  gap-10'>
         <div className='flex flex-col gap-4 items-start justify-center  '>
-          <p className='example -rotate-6'>funds</p>
-          <p className='font-semibold text-4xl text-black'>Help & Donate</p>
-          <p className='max-w-md'>Vim audire labores insolens ut. Iisque imperdiet sea at, ea est porro appart.</p>
-          <button className='bgPrimary px-10 py-4 rounded-3xl text-sm font-semibold text-white mt-2'>VIEW MORE</button>
+          <p className='example -rotate-6'>Latest</p>
+          <p className='font-semibold text-4xl text-black'>Walk The Talk</p>
+          <p className='max-w-md'>Discover people changing the face of our planet for good.
+          Tune in and listen to their sure-to-inspire stories.</p>
+          {/* <button className='bgPrimary px-10 py-4 rounded-3xl text-sm font-semibold text-white mt-2'>VIEW MORE</button> */}
           
         </div>
         <CarouselComponent videoList={videoData} autoPlay={true} />
@@ -88,10 +94,11 @@ export default function Section2() {
 
       <div className='bgSection3 flex flex-col py-32 md:px-20 gap-4 items-center text-white'>
         <p className='example -rotate-6'>COMMUNITY</p>
-        <p className='font-semibold text-4xl text-white max-w-sm text-center'>Become a Volunteer in Our Community</p>
+        <p className='font-semibold text-4xl text-white max-w-lg text-center'>Action and Change starts from here
+        Be a part of Planecious.</p>
         {/* <CarouselComponent videoList={communityPosts} autoPlay={true} /> */}
         {/* <button className='bgPrimary px-10 py-4 rounded-3xl text-sm font-semibold text-white mt-2'>JOIN COMMUNITY</button> */}
-        <Link className='bgPrimary px-10 py-4 rounded-3xl text-sm font-semibold text-white mt-2' href={'https://www.linkedin.com/groups/8147680/'}>JOIN COMMUNITY</Link>
+        <Link className='bgPrimary px-6 py-4 rounded-3xl text-xs font-semibold text-white mt-2' href={'https://www.linkedin.com/groups/8147680/'}>JOIN HERE</Link>
       </div>
       <section className='flex flex-col lg:flex-row justify-evenly h-full lg:h-[70vh]'>
         <div className='flex flex-col w-full'>
@@ -102,7 +109,7 @@ export default function Section2() {
           <div className='flex flex-col lg:flex-row w-screen lg:w-auto lg:h-[46vh]'>
           <img src='https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-masonry-img-2.jpg' className='w-full lg:w-1/2'/>
           <div className='flex flex-col gap-4 justify-center items-start bgSection3card px-10 lg:px-20 py-20 lg:py-8 w-full lg:w-1/2 '>
-          <p className='font-semibold text-2xl xl:text-3xl text-black  text-start gradientText max-w-md'>The polar bear is the largest bear species, and the largest land carnivore </p>
+          <p className='font-semibold text-2xl xl:text-3xl text-black  text-start gradientText max-w-md'>A healthier planet, happier people,Our mission in action.</p>
           <Link className='underline' href={'/'}>TAKE ACTION</Link>
           </div>
           </div>
@@ -119,7 +126,7 @@ export default function Section2() {
         <div className='flex flex-col  h-[70vh]'>
           <img src='https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-masonry-img-1.jpg' className='h-1/2'/>
           <div className='flex flex-col gap-16 justify-center items-start  py-10  px-10 lg:px-20 bg-orange-400 h-1/2'>
-          <p className='font-semibold text-xl 2xl:text-2xl text-white  max-w-lg text-start'>Key to a More Eco-friendly world in 2022</p>
+          <p className='font-semibold text-xl 2xl:text-2xl text-white  max-w-lg text-start'>An initiative to empower brands purposefully.</p>
           <div className='flex flex-col gap-2 text-white'>
             <p className='example'>Abhishek Raj</p>
             <p className='text-md'>ENGINEER, GRACIA MARCOM</p>
