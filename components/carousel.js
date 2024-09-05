@@ -10,7 +10,7 @@ const responsive = {
   mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
 };
 
-const isYouTubeUrl = (url) => url.includes("youtube.com");
+
 const isLinkedInUrl = (url) => url.includes("linkedin.com");
 
 const CarouselComponent = ({ videoList, autoPlay }) => {
@@ -27,8 +27,8 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
       // autoPlay={autoPlay}
       autoPlaySpeed={2500}
       centerMode={false}
-      className="flex flex-row gap-8"
-      containerClass="w-full"
+      className=""
+      containerClass="w-full flex flex-row gap-8"
       draggable
       focusOnSelect={true}
       infinite
@@ -54,7 +54,7 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-              className="items-center w-full h-full"
+              className="items-center  h-full"
               loading="lazy"
               
             ></iframe>

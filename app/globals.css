@@ -252,19 +252,19 @@ background-attachment: fixed;
 }
 .animated-box {
   position: relative; /* Ensure relative positioning for animation to work */
-  bottom: -400px; /* Set initial state */
+  bottom: -200px; /* Set initial state */
   transition: bottom 0.5s ease-in-out; /* Apply smooth transition */
 }
 
 .aboutSecIcons {
   animation-name: slideTop;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards; 
 }
 
 @keyframes slideTop {
   0% {
-    bottom: -400px;
+    bottom: -200px;
   }
   100% {
     bottom: 0;

@@ -35,15 +35,30 @@ export default function Section2() {
       paragraph: 'Welcome to Planecious, the ultimate platform for individuals passionate about combating climate change and building a sustainable future.',
     },
   ];
+  const animatedRefs = useRef([]); // Array of refs
 
   useEffect(() => {
-    const animatedBox = document.querySelector('.animated-box');
-    if (animatedBox) {
-      // Add the 'aboutSecIcons' class to trigger the animation after a delay
-      setTimeout(() => {
-        animatedBox.classList.add('aboutSecIcons');
-      }, 1000); // 1-second delay before starting the animation
-    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('aboutSecIcons');
+            observer.unobserve(entry.target); // Stop observing after animation is triggered
+          }
+        });
+      },
+      { threshold: 0.01 } // Trigger when 10% of the element is visible
+    );
+
+    animatedRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      animatedRefs.current.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
   }, []);
 
   const communityPosts = [
@@ -68,9 +83,9 @@ future the planet deserves.</p>
           <p className='text-5xl font-bold text-center'>An initiative for change by aligning</p>
          
         </div>
-        <div className='flex flex-wrap gap-16 lg:gap-20 xl:gap-28 justify-center items-center animated-box' >
+        <div  className='flex flex-wrap gap-16 lg:gap-20 xl:gap-28 justify-center items-center ' >
           {section2Data.map((data, index) => (
-            <div key={index} className={`${index % 2 !== 0 && 'md:mt-40'} mt-12 flex flex-col justify-center items-center gap-4 `} >
+            <div  key={index} className={`${index % 2 !== 0 && 'md:mt-40'} mt-12 flex flex-col justify-center items-center gap-4 animated-box`}     ref={(el) => (animatedRefs.current[index] = el)} >
               <img src={data.imgUrl} className='w-[120px]' alt={data.title} />
               <p>{data.title}</p>
               {/* <p>{data.detail}</p> */}
