@@ -13,16 +13,18 @@ const Hero = () => {
         loop 
         muted 
         playsInline
+        preload="auto"
       >
         <source src="/hero/heroLargeDevice.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <video 
         className="video-mobile" 
-         
+        autoPlay 
         loop 
         muted 
         playsInline
+        preload="auto"
       >
         <source src="hero/heroMobile.mp4" type="video/mp4" />
         Your browser does not support the video tag.
