@@ -3,9 +3,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { useEffect, useRef } from 'react';
 import CarouselComponent from '../carousel';
 
 export default function Section2() {
+
   const section2Data = [
     { imgUrl: 'https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-icon-1.png', title: 'People', detail: 'Assum aperiris his eam mea', button: '' },
     { imgUrl: 'https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-icon-2.png', title: 'Planet', detail: 'Assum aperiris his eam mea', button: '' },
@@ -34,6 +36,16 @@ export default function Section2() {
     },
   ];
 
+  useEffect(() => {
+    const animatedBox = document.querySelector('.animated-box');
+    if (animatedBox) {
+      // Add the 'aboutSecIcons' class to trigger the animation after a delay
+      setTimeout(() => {
+        animatedBox.classList.add('aboutSecIcons');
+      }, 1000); // 1-second delay before starting the animation
+    }
+  }, []);
+
   const communityPosts = [
     {
       url: 'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7226182797361606657',
@@ -56,13 +68,13 @@ future the planet deserves.</p>
           <p className='text-5xl font-bold text-center'>An initiative for change by aligning</p>
          
         </div>
-        <div className='flex flex-wrap gap-16 lg:gap-20 xl:gap-28 justify-center items-center '>
+        <div className='flex flex-wrap gap-16 lg:gap-20 xl:gap-28 justify-center items-center animated-box' >
           {section2Data.map((data, index) => (
-            <div key={index} className={`${index % 2 !== 0 && 'md:mt-40'} mt-12 flex flex-col justify-center items-center gap-4`}>
+            <div key={index} className={`${index % 2 !== 0 && 'md:mt-40'} mt-12 flex flex-col justify-center items-center gap-4 `} >
               <img src={data.imgUrl} className='w-[120px]' alt={data.title} />
               <p>{data.title}</p>
-              <p>{data.detail}</p>
-              <Link className='underline' href={'/'}>TAKE ACTION</Link>
+              {/* <p>{data.detail}</p> */}
+              {/* <Link className='underline' href={'/'}>TAKE ACTION</Link> */}
             </div>
           ))}
         </div>

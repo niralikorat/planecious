@@ -32,7 +32,7 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
       draggable
       focusOnSelect={true}
       infinite
-      itemClass="carousel-item-padding-40-px"
+      itemClass="carousel-item-padding-40-px gap-4"
       keyBoardControl
       minimumTouchDrag={80}
       pauseOnHover
@@ -45,38 +45,26 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
       {videoList.map((video, index) => (
         <div
           key={index}
-          className="flex flex-col bgPodCastCard m-4  h-auto"
+          className="flex flex-col bg-white m-4 w-full "
         >
-          {isYouTubeUrl(video.url) ? (
+
             <iframe
               src={video.url}
               title={`YouTube video player ${index}`}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-              className="items-center"
+              className="items-center w-full h-full"
               loading="lazy"
+              
             ></iframe>
-          ) : isLinkedInUrl(video.url) ? (
-            <iframe
-              src={video.url}
-              height="600"
-              width="400"
-              frameborder="0"
-              // allowfullscreen=""
-              title="Embedded post"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              className="w-auto items-center"
-              loading="lazy"
-            ></iframe>
-          ) : null}
-          <div className="flex flex-col items-start p-8 gap-4">
-            <p className="text-start text-md textThemeColor">{video.category}</p>
-            <p className="text-black font-semibold text-lg ">
+
+          <div className="flex flex-col items-start py-4 gap-1">
+            <p className="text-start text-sm textThemeColor">{video.category}</p>
+            <p className="text-black font-semibold text-md ">
               {video.heading}
             </p>
-            <p className="text-gray-600 text-md">{video.paragraph}</p>
+            {/* <p className="text-gray-600 text-md">{video.paragraph}</p> */}
           </div>
         </div>
       ))}
