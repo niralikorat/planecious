@@ -121,7 +121,7 @@ future the planet deserves.</p>
 
       <div className='bgSection3 flex flex-col py-32 md:px-20 gap-4 items-center text-white'>
         <p className='example -rotate-6'>COMMUNITY</p>
-        <p className='font-semibold text-4xl text-white max-w-lg text-center'>Action and Change starts from here
+        <p className='font-semibold text-4xl text-white  text-center'>Action and Change starts from here,<br></br>
         Be a part of Planecious.</p>
         {/* <CarouselComponent videoList={communityPosts} autoPlay={true} /> */}
         {/* <button className='bgPrimary px-10 py-4 rounded-3xl text-sm font-semibold text-white mt-2'>JOIN COMMUNITY</button> */}
@@ -134,7 +134,7 @@ future the planet deserves.</p>
           <Link className='underline' href={'/'}>TAKE ACTION</Link>
           </div>
           <div className='flex flex-col lg:flex-row w-screen lg:w-auto lg:h-[46vh]'>
-          <img src='https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-masonry-img-2.jpg' className='w-full lg:w-1/2'/>
+          <img src='dekoratus.jpg' className='w-full lg:w-1/2'/>
           <div className='flex flex-col gap-4 justify-center items-start bgSection3card px-10 lg:px-20 py-20 lg:py-8 w-full lg:w-1/2 '>
           <p className='font-semibold text-2xl xl:text-3xl text-black  text-start gradientText max-w-md'>A healthier planet, happier people,Our mission in action.</p>
           <Link className='underline' href={'/'}>TAKE ACTION</Link>
