@@ -100,7 +100,7 @@ future the planet deserves.</p>
           <div className='flex flex-col text-white justify-center items-start gap-4 px-10 lg:px-20 py-32 '>
             <p className='example -rotate-6'>WHALE LOVE</p>
             <p className='text-4xl font-semibold '>New Research Reveals That Whales and Dolphins Have a Rich Social Life</p>
-            <button className='bg-white px-10 py-4 rounded-3xl text-sm font-semibold text-black mt-2'>VIEW MORE</button>
+            <Link className='bg-white px-10 py-4 rounded-3xl text-sm font-semibold text-black mt-2' href={'ebook.pdf'} target="_blank">READ NOW</Link>
           </div>
           <div className='triangle-right'></div>
         </div>
@@ -137,7 +137,7 @@ future the planet deserves.</p>
           <img src='dekoratus.jpg' className='w-full lg:w-1/2'/>
           <div className='flex flex-col gap-4 justify-center items-start bgSection3card px-10 lg:px-20 py-20 lg:py-8 w-full lg:w-1/2 '>
           <p className='font-semibold text-2xl xl:text-3xl text-black  text-start gradientText max-w-md'>A healthier planet, happier people,Our mission in action.</p>
-          <Link className='underline' href={'/'}>TAKE ACTION</Link>
+          <Link className='underline' href={'https://dekoratus.com/'} target="_blank">EXPLORE NOW</Link>
           </div>
           </div>
        
