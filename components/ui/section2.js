@@ -107,7 +107,7 @@ future the planet deserves.</p>
         <img src={'/sec3img.jpg'} className='w-full lg:w-3/5' alt='img' />
       </div>
 
-      <div className='flex flex-col md:flex-row bgPodcast p-4 md:px-20 py-32  gap-10'>
+      <div className='flex flex-col md:flex-row bgPodcast p-4 md:px-20 py-32 justify-between gap-10'>
         <div className='flex flex-col gap-4 items-start justify-center  '>
           <p className='example -rotate-6'>Latest</p>
           <p className='font-semibold text-4xl text-black'>Walk The Talk</p>

@@ -24,9 +24,9 @@ const Navbar = () => {
 
   return (
     <nav className=" fixed top-0 w-full z-40  border-gray-200 dark:border-gray-600">
-      <div className="flex flex-row items-center justify-between px-8 lg:px-20 py-4 " >
+      <div className="flex flex-row items-center justify-between px-4 lg:px-20 py-4 " >
         <Link href="/">
-          <Image src="/Planecious.svg" width={164} height={36} alt="Planecious Logo" className='scale-125 ' />
+          <Image src="/Planecious.svg" width={164} height={36} alt="Planecious Logo" className='lg:scale-125 ' />
         </Link>
         <div className="lg:flex lg:flex-row lg:gap-8 hidden lg:block text-white">
           {navItems.map((item) => (

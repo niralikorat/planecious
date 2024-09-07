@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -10,29 +10,20 @@ const responsive = {
   mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
 };
 
-
-const isLinkedInUrl = (url) => url.includes("linkedin.com");
-
 const CarouselComponent = ({ videoList, autoPlay }) => {
-  useEffect(()=>{
-    console.log(isLinkedInUrl(videoList[0].url))
-
-  },[videoList])
-
-  videoList.includes()
   return (
     <Carousel
       additionalTransfrom={0}
       arrows
       autoPlay={autoPlay}
       autoPlaySpeed={2500}
-      centerMode={false}
-      className=""
-      containerClass="w-full flex flex-row gap-8 mx-8"
+      centerMode={false} // Set to false to improve mobile layout
+      className="w-full"
+      containerClass="w-full"
       draggable
       focusOnSelect={true}
       infinite
-      itemClass="carousel-item-padding-40-px"
+      itemClass="px-2 md:px-4" // Adjust padding for responsiveness
       keyBoardControl
       minimumTouchDrag={80}
       pauseOnHover
@@ -46,26 +37,25 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
       {videoList.map((video, index) => (
         <div
           key={index}
-          className="flex flex-col bg-white m-4 w-full mx-20 "
+          className="flex flex-col bg-white w-full m-2 md:m-4"
         >
-
+          <div className="aspect-w-16 aspect-h-9 w-full"> {/* Ensures responsive video container */}
             <iframe
               src={video.url}
               title={`YouTube video player ${index}`}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-              className="items-center  h-full"
+              className="w-full h-full"
               loading="lazy"
-              
             ></iframe>
+          </div>
 
           <div className="flex flex-col items-start py-4 gap-1">
             <p className="text-start text-sm textThemeColor">{video.category}</p>
-            <p className="text-black font-semibold text-md ">
+            <p className="text-black font-semibold text-md">
               {video.heading}
             </p>
-            {/* <p className="text-gray-600 text-md">{video.paragraph}</p> */}
           </div>
         </div>
       ))}

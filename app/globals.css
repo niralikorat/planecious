@@ -253,7 +253,7 @@ background-attachment: fixed;
 .animated-box {
   position: relative; /* Ensure relative positioning for animation to work */
   bottom: -200px; /* Set initial state */
-  transition: bottom 0.5s ease-in-out; /* Apply smooth transition */
+  transition: bottom 0.5s ease; /* Apply smooth transition */
 }
 
 .aboutSecIcons {
