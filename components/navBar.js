@@ -19,6 +19,7 @@ const Navbar = () => {
   const [navbarBg, setNavbarBg] = useState('bg-transparent text-white');
 
   useEffect(() => {
+  
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setNavbarBg('bg-white shadow-md text-black');
@@ -46,7 +47,7 @@ const Navbar = () => {
         <div className="lg:flex lg:flex-row lg:gap-8 hidden lg:block  mr-20">
           {navItems.map((item) => (
             <Link key={item.name} href={item.href}>
-              <span className={`text-base ${pathname === item.href ? 'underline' : ''} hover:text-[#37ACC5]`}>{item.name}</span>
+              <span className={`text-base ${pathname === item.href ? 'underline' : ''} hover:text-[#37ACC5] font-semibold`}>{item.name}</span>
             </Link>
           ))}
         </div>

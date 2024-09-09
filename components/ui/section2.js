@@ -11,8 +11,8 @@ export default function Section2() {
   const section2Data = [
     { imgUrl: 'aboutIcon/Icons-01.png', title: 'People', detail: 'Assum aperiris his eam mea', button: '' },
     { imgUrl: 'aboutIcon/Icons-02.png', title: 'Planet', detail: 'Assum aperiris his eam mea', button: '' },
-    { imgUrl: 'aboutIcon/Icons-03.png', title: 'Community', detail: 'Assum aperoros his eam mea', button: '' },
-    { imgUrl: 'aboutIcon/Icons-04.png', title: 'Sustainability', detail: 'Assum aperiris his eam mea', button: '' }
+    { imgUrl: 'aboutIcon/Icons-04.png', title: 'Community', detail: 'Assum aperoros his eam mea', button: '' },
+    { imgUrl: 'aboutIcon/Icons-03.png', title: 'Sustainability', detail: 'Assum aperiris his eam mea', button: '' }
   ];
 
   const videoData = [
@@ -72,7 +72,7 @@ export default function Section2() {
 
   return (
     <div className='flex flex-col'>
-      <div className='section2 py-24 px-4 md:px-12 flex flex-col text-white' id='about'>
+      <div className='section2 py-24 px-4 md:px-12 flex flex-col text-black' id='about'>
         <div className='flex flex-col gap-8 justify-center items-center'>
           <p className='example text-md text-center p-4 -rotate-12'>ABOUT US</p>
           <p className='max-w-2xl text-center text-sm'>We represent a community of optimists who strive to make a difference. Planecious turns
@@ -98,13 +98,13 @@ future the planet deserves.</p>
       <div className='flex flex-col md:flex-row'>
         <div className='flex flex-row items-center bgPrimary w-full lg:w-2/5'>
           <div className='flex flex-col text-white justify-center items-start gap-4 px-10 lg:px-20 py-32 '>
-            <p className='example -rotate-6 text-md'>Ebook</p>
-            <p className='text-4xl font-semibold '>A Guide to Sustainable Marketing in 2024</p>
-            <Link className='bg-white px-10 py-4 rounded-3xl text-sm font-semibold text-black mt-2 hover:scale-105' href={'ebook.pdf'} target="_blank">READ NOW</Link>
+            <p className='example -rotate-6 text-md'>E-book</p>
+            <p className=' text-3xl lg:text-4xl font-semibold '>A Guide to Sustainable Marketing in 2024</p>
+            <Link className='bg-white px-4 py-3 lg:px-8 lg:py-4 rounded-3xl text-xs lg:text-sm font-semibold text-black mt-2 hover:scale-105' href={'ebook.pdf'} target="_blank">READ NOW</Link>
           </div>
           <div className='triangle-right'></div>
         </div>
-        <img src={'/sec3img.jpg'} className='w-full lg:w-3/5' alt='img' />
+        <img src={'/ebookBanner.jpg'} className='w-full lg:w-3/5' alt='img' />
       </div>
 
       <div className='flex flex-col md:flex-row bgPodcast p-4 md:px-20 py-32 justify-between gap-10' id='walkTheTalk'>
@@ -151,7 +151,7 @@ future the planet deserves.</p>
 
         </div> */}
         <div className='flex flex-col  h-[70vh]'>
-          <img src='https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-masonry-img-1.jpg' className='h-1/2'/>
+          <img src='/graciaBanner.jpg' className='h-1/2'/>
           <div className='flex flex-col gap-16 justify-center items-start  py-10  px-10 lg:px-20 bg-orange-400 h-1/2'>
           <p className='font-semibold text-2xl 2xl:text-3xl text-white  max-w-lg text-start'>An initiative to empower brands purposefully.</p>
           <div className='flex flex-col gap-2 text-white'>
