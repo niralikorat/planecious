@@ -44,7 +44,7 @@ const Navbar = () => {
         <Link href="/">
           <img src="/Planecious.svg" width={164} height={36} alt="Planecious Logo" className="lg:scale-125" />
         </Link>
-        <div className="lg:flex lg:flex-row lg:gap-8 hidden lg:block  mr-20">
+        <div className="lg:flex lg:flex-row lg:gap-8 hidden lg:block  ">
           {navItems.map((item) => (
             <Link key={item.name} href={item.href}>
               <span className={`text-base ${pathname === item.href ? 'underline' : ''} hover:text-[#37ACC5] font-semibold`}>{item.name}</span>

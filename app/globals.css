@@ -158,8 +158,8 @@ body {
 
 
 .bgfooterText {
-  /* background: linear-gradient(to bottom, #fff, #37ACC5); */
-  background-color: #37ACC5;
+  background: linear-gradient(to top, #91ebff, #37ACC5);
+  /* background-color: #62D3AF; */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
