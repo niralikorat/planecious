@@ -52,7 +52,7 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
           </div>
 
           <div className="flex flex-col items-start py-4 gap-1">
-            <p className="text-start text-sm textThemeColor">{video.category}</p>
+            {/* <p className="text-start text-sm textThemeColor">{video.category}</p> */}
             <p className="text-black font-semibold text-md">
               {video.heading}
             </p>

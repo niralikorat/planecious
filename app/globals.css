@@ -261,6 +261,7 @@ background-attachment: fixed;
 .animated-box {
   position: relative; /* Ensure relative positioning for animation to work */
   bottom: -200px; /* Set initial state */
+  opacity: 0;
   transition: bottom 0.5s ease; /* Apply smooth transition */
 }
 
@@ -273,8 +274,10 @@ background-attachment: fixed;
 @keyframes slideTop {
   0% {
     bottom: -200px;
+    opacity: 0;
   }
   100% {
     bottom: 0;
+    opacity: 1;
   }
 }
