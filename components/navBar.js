@@ -10,7 +10,7 @@ const navItems = [
   { name: 'About', href: '#about' },
   { name: 'Walk The Talk', href: '#walkTheTalk' },
   { name: 'Initiatives', href: '#Initiatives' },
-  { name: 'Join Now', href: '#JoinUs' },
+  // { name: 'Join Now', href: '#JoinUs' },
 ];
 
 const Navbar = () => {
@@ -44,12 +44,21 @@ const Navbar = () => {
         <Link href="/">
           <img src="/Planecious.svg" width={164} height={36} alt="Planecious Logo" className="lg:scale-125" />
         </Link>
-        <div className="lg:flex lg:flex-row lg:gap-8 hidden lg:block  ">
+        <div className="lg:flex lg:flex-row lg:gap-8 hidden   items-center">
           {navItems.map((item) => (
             <Link key={item.name} href={item.href}>
               <span className={`text-base ${pathname === item.href ? 'underline' : ''} hover:text-[#37ACC5] font-semibold`}>{item.name}</span>
             </Link>
+            
           ))}
+          <Link
+          className="bgPrimary px-4 py-2 rounded-3xl text-xs font-semibold text-white  hover:scale-105"
+          href={"https://www.linkedin.com/groups/8147680/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          JOIN US
+        </Link>
         </div>
 
       <div className='flex lg:hidden'> <Hamburger toggled={isOverlayOpen} toggle={setIsOverlayOpen} size={20}  /></div> 
@@ -57,7 +66,7 @@ const Navbar = () => {
 
       {/* Overlay Navigation */}
       {isOverlayOpen && (
-        <div className="fixed inset-x-0 bg-black bg-opacity-70 h-screen p-8 md:p-20 text-white flex flex-col justify-between bgNav">
+        <div className="fixed inset-x-0 bg-transparent bg-opacity-70 h-screen p-8 md:p-20 text-[#37ACC5] flex flex-col justify-between bgNav">
           <div className="flex flex-col gap-4 md:gap-8 font-semibold">
             {navItems.map((item) => (
               <Link key={item.name} href={item.href} className="text-4xl md:text-5xl hover:font-bold hover:textPrimary" onClick={closeSideNav}>

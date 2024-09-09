@@ -4,16 +4,16 @@ import React from "react";
 export default function Footer() {
   return (
     <div className="flex flex-col">
-    <div className="flex flex-col md:flex-row justify-between items-start md:items-center bg-white text-black p-4 md:p-20 shadow-md">
-<div className="flex flex-row gap-32 items-start">
+    <div className="flex flex-col md:flex-row justify-between items-start  bg-white text-black p-4 py-20 md:p-20 shadow-md gap-12">
+
       <div className="flex flex-col gap-8">
        <img
             src="/Planecious.svg"
             alt="Planecious Logo"
             className="w-[240px] "
           />
-  
-        <div className="flex flex-row gap-4">
+  <p className="max-w-xs text-sm">Planecious is a platform dedicated to helping businesses embrace sustainability and environmental responsibility. We believe that by working together, we can create a more sustainable future for our planet.</p>
+        {/* <div className="flex flex-row gap-4">
            
 
            <Link
@@ -59,7 +59,7 @@ export default function Footer() {
                <path d="M19.615 3.184C17.915 2.63 12 2.63 12 2.63s-5.916 0-7.615.554A3.977 3.977 0 0 0 2.65 5.707C2.1 7.406 2.1 12 2.1 12s0 4.593.55 6.293a3.977 3.977 0 0 0 1.735 1.972c1.7.554 7.615.554 7.615.554s5.916 0 7.615-.554a3.977 3.977 0 0 0 1.735-1.972C21.9 16.593 21.9 12 21.9 12s0-4.593-.55-6.293a3.977 3.977 0 0 0-1.735-1.973zM9.75 15.336v-6.672L15.334 12 9.75 15.336z" />
              </svg>
            </Link>
-         </div>
+         </div> */}
 
         {/* <div className="flex flex-col">
           <p className="text-sm">Lets Transform The World Together.</p>
@@ -73,13 +73,23 @@ export default function Footer() {
         <div className="flex flex-col gap-8">
           <p className="font-bold">Get involved</p>
           <div className="flex flex-col gap-2 text-s">
-            <li className="list-none">Contact us</li>
-            <li className="list-none">Join the community</li>
-            <li className="list-none">About us</li>
+            <Link href={'#about'} className="list-none hover:underline">About Us</Link>
+            <Link href={'#walkTheTalk'} className="list-none hover:underline">Walk The Talk</Link>
+            <Link href={'#Initiatives'} className="list-none hover:underline">Initiatives</Link>
           </div>
         </div>
       </div>
+      <div className="flex flex-wrap">
+        <div className="flex flex-col gap-8">
+          <p className="font-bold">Social Links</p>
+          <div className="flex flex-col gap-2 text-s">
+            <Link href={'https://www.instagram.com/planeciousleaders/'} className="list-none hover:underline" target="_blank"  rel="noopener noreferrer">Instagram</Link>
+            <Link href={'https://www.linkedin.com/groups/8147680/'} className="list-none hover:underline" target="_blank"  rel="noopener noreferrer">Linkedin</Link>
+            <Link href={'https://www.youtube.com/@PlaneciousLeaders'} className="list-none hover:underline" target="_blank"  rel="noopener noreferrer">Youtube</Link>
+          </div>
         </div>
+      </div>
+       
         <div>
           <p className="example -rotate-6 text-4xl font-thin bgfooterText ">
             For causes{" "}

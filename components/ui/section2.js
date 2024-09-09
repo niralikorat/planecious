@@ -160,7 +160,7 @@ export default function Section2() {
             Discover people changing the face of our planet for good. Tune in
             and listen to their sure-to-inspire stories.
           </p>
-          {/* <button className='bgPrimary px-10 py-4 rounded-3xl text-sm font-semibold text-white mt-2'>VIEW MORE</button> */}
+          <Link href={'https://www.youtube.com/@PlaneciousLeaders'} target="_blank"  rel="noopener noreferrer" className='bgPrimary px-6 py-2 rounded-3xl text-sm font-semibold text-white mt-2 hover:scale-105'>Explore More</Link>
         </div>
         <CarouselComponent videoList={videoData} autoPlay={true} />
       </div>
