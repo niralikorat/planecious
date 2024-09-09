@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className='flex flex-col md:flex-row justify-between items-start md:items-center bg-[#0a111f] text-white p-4 md:p-20' >
+    <div className='flex flex-col md:flex-row justify-between items-start md:items-center bg-white text-black p-4 md:p-20' >
         <div className='flex flex-col gap-8'>
         <div>
         <p className='example -rotate-6 text-5xl font-thin bgfooterText'>For causes </p>
@@ -42,8 +42,8 @@ export default function Footer() {
         <div className='flex flex-col gap-8'>
         <div className='flex flex-col gap-4 justify-start'>
     <p>Join the newsletter</p>
-    <div className='flex flex-row px-4 bg-transparent rounded-3xl border-2 border-white gap-2' >
-    <input type='email' className='p-2 bg-transparent text-white' placeholder='Email'/>
+    <div className='flex flex-row px-4 bg-transparent rounded-3xl border-2 border-black gap-2' >
+    <input type='email' className='p-2 bg-transparent text-black' placeholder='Email'/>
     <button className="">Send</button>
     </div>
   
