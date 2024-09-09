@@ -10,12 +10,13 @@ const navItems = [
   { name: 'About', href: '#about' },
   { name: 'Walk The Talk', href: '#walkTheTalk' },
   { name: 'Initiatives', href: '#Initiatives' },
+  { name: 'Join Now', href: '#JoinUs' },
 ];
 
 const Navbar = () => {
   const pathname = usePathname();
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
-  const [navbarBg, setNavbarBg] = useState('bg-transparent');
+  const [navbarBg, setNavbarBg] = useState('bg-transparent text-white');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,19 +36,19 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-40 border-gray-200 dark:border-gray-600 transition duration-300 ${navbarBg}`}>
-      <div className="flex flex-row items-center justify-between px-4 lg:px-20 py-4">
+      <div className="flex flex-row items-center justify-between px-4 lg:px-20 py-8">
         <Link href="/">
-          <Image src="/Planecious.svg" width={164} height={36} alt="Planecious Logo" className="lg:scale-125" />
+          <img src="/Planecious.svg" width={164} height={36} alt="Planecious Logo" className="lg:scale-125" />
         </Link>
         <div className="lg:flex lg:flex-row lg:gap-8 hidden lg:block  mr-20">
           {navItems.map((item) => (
             <Link key={item.name} href={item.href}>
-              <span className={`text-base ${pathname === item.href ? 'underline' : ''}`}>{item.name}</span>
+              <span className={`text-base ${pathname === item.href ? 'underline' : ''} hover:text-[#37ACC5]`}>{item.name}</span>
             </Link>
           ))}
         </div>
 
-        <Hamburger toggled={isOverlayOpen} toggle={setIsOverlayOpen} size={20} />
+      <div className='flex lg:hidden'> <Hamburger toggled={isOverlayOpen} toggle={setIsOverlayOpen} size={20}  /></div> 
       </div>
 
       {/* Overlay Navigation */}

@@ -98,8 +98,8 @@ future the planet deserves.</p>
       <div className='flex flex-col md:flex-row'>
         <div className='flex flex-row items-center bgPrimary w-full lg:w-2/5'>
           <div className='flex flex-col text-white justify-center items-start gap-4 px-10 lg:px-20 py-32 '>
-            <p className='example -rotate-6 text-md'>WHALE LOVE</p>
-            <p className='text-4xl font-semibold '>New Research Reveals That Whales and Dolphins Have a Rich Social Life</p>
+            <p className='example -rotate-6 text-md'>Ebook</p>
+            <p className='text-4xl font-semibold '>A Guide to Sustainable Marketing in 2024</p>
             <Link className='bg-white px-10 py-4 rounded-3xl text-sm font-semibold text-black mt-2 hover:scale-105' href={'ebook.pdf'} target="_blank">READ NOW</Link>
           </div>
           <div className='triangle-right'></div>
@@ -119,7 +119,7 @@ future the planet deserves.</p>
         <CarouselComponent videoList={videoData} autoPlay={true} />
       </div>
 
-      <div className='bgSection3 flex flex-col py-32 md:px-20 gap-4 items-center text-white'>
+      <div className='bgSection3 flex flex-col py-32 md:px-20 gap-4 items-center text-white' id='JoinUs'>
         <p className='example -rotate-6 text-md'>COMMUNITY</p>
         <p className='font-semibold text-4xl text-white  text-center'>Action and Change starts from here,<br></br>
         Be a part of Planecious.</p>
@@ -137,7 +137,7 @@ future the planet deserves.</p>
           <img src='dekoratus.jpg' className='w-full lg:w-1/2'/>
           <div className='flex flex-col gap-4 justify-center items-start bgSection3card px-10 lg:px-20 py-20 lg:py-8 w-full lg:w-1/2 '>
           <p className='font-semibold text-2xl xl:text-3xl text-black  text-start gradientText max-w-md'>A healthier planet, happier people,Our mission in action.</p>
-          <Link className='underline' href={'https://dekoratus.com/'} target="_blank">EXPLORE NOW</Link>
+          <Link className='underline' href={'https://dekoratus.com/'} target="_blank">VISIT US</Link>
           </div>
           </div>
        
@@ -156,7 +156,7 @@ future the planet deserves.</p>
           <p className='font-semibold text-2xl 2xl:text-3xl text-white  max-w-lg text-start'>An initiative to empower brands purposefully.</p>
           <div className='flex flex-col gap-2 text-white'>
             {/* <p className='example'>Abhishek Raj</p> */}
-            <p className='text-md'>GRACIA MARCOM</p>
+            <Link href={'https://graciamarcom.com/'} className='text-md hover:underline'>GRACIA MARCOM</Link>
           </div>
       
           </div>
