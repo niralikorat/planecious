@@ -49,7 +49,7 @@ export default function Footer() {
   
 </div>
 <div className='flex flex-col gap-8'>
-<img src="/planecious.svg" alt='Planecious Logo' className='w-[128px] ' />
+<img src="/Planecious.svg" alt='Planecious Logo' className='w-[128px] ' />
   <div className='flex flex-row gap-4'>
 
        <svg

@@ -137,7 +137,7 @@ future the planet deserves.</p>
           <img src='dekoratus.jpg' className='w-full lg:w-1/2'/>
           <div className='flex flex-col gap-4 justify-center items-start bgSection3card px-10 lg:px-20 py-20 lg:py-8 w-full lg:w-1/2 '>
           <p className='font-semibold text-2xl xl:text-3xl text-black  text-start gradientText max-w-md'>A healthier planet, happier people,Our mission in action.</p>
-          <Link className='underline' href={'https://dekoratus.com/'} target="_blank">VISIT US</Link>
+          <Link className='underline text-sm' href={'https://dekoratus.com/'} target="_blank">VISIT US</Link>
           </div>
           </div>
        

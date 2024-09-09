@@ -28,12 +28,15 @@ const Navbar = () => {
       }
     };
 
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
+  const closeSideNav = ()=>{
+    setIsOverlayOpen(false)
+  }
   return (
     <nav className={`fixed top-0 w-full z-40 border-gray-200 dark:border-gray-600 transition duration-300 ${navbarBg}`}>
       <div className="flex flex-row items-center justify-between px-4 lg:px-20 py-8">
@@ -56,7 +59,7 @@ const Navbar = () => {
         <div className="fixed inset-x-0 bg-black bg-opacity-70 h-screen p-8 md:p-20 text-white flex flex-col justify-between bgNav">
           <div className="flex flex-col gap-4 md:gap-8 font-semibold">
             {navItems.map((item) => (
-              <Link key={item.name} href={item.href} className="text-4xl md:text-5xl hover:font-bold hover:textPrimary">
+              <Link key={item.name} href={item.href} className="text-4xl md:text-5xl hover:font-bold hover:textPrimary" onClick={closeSideNav}>
                 {item.name}
               </Link>
             ))}
