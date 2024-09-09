@@ -107,7 +107,7 @@ export default function Section2() {
             more sustainably easier, enabling any person to create an impact and
             build towards the future the planet deserves.
           </p>
-          <p className="text-5xl font-semibold text-center">
+          <p className="text-5xl font-semibold text-center text-[#37ACC5]">
             An initiative for change by aligning
           </p>
         </div>
@@ -157,7 +157,7 @@ export default function Section2() {
           <p className="example -rotate-6 text-md">Latest</p>
           <p className="font-semibold text-4xl text-black">Walk The Talk</p>
           <p className="max-w-md">
-            Discover people changing the face of our planet for good. Tune in
+            Discover people changing the face of our planet for good. <br></br>Tune in
             and listen to their sure-to-inspire stories.
           </p>
           <Link href={'https://www.youtube.com/@PlaneciousLeaders'} target="_blank"  rel="noopener noreferrer" className='bgPrimary px-6 py-2 rounded-3xl text-sm font-semibold text-white mt-2 hover:scale-105'>Explore More</Link>

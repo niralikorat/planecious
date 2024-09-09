@@ -115,7 +115,7 @@ export default function Footer() {
       </div> */}
  
     </div>
-    <div className="w-full h-4 bg-slate-200" >
+    <div className="w-full h-4 " >
       <p className="text-sm text-center">© 2024 Planecious. All rights reserved.</p>
     </div>
     </div>
