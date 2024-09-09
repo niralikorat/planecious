@@ -4,7 +4,7 @@ import React from "react";
 export default function Footer() {
   return ( 
     <div className="flex flex-col bg-white">
-    <div className="flex flex-col md:flex-row justify-between items-start   text-black p-4 py-20 md:p-20  gap-12">
+    {/* <div className="flex flex-col md:flex-row justify-between items-start   text-black p-4 py-20 md:p-20  gap-12">
 
       <div className="flex flex-col gap-8">
        <img
@@ -12,7 +12,7 @@ export default function Footer() {
             alt="Planecious Logo"
             className="w-[240px] "
           />
-  <p className="max-w-xs text-sm">Planecious is a platform dedicated to helping businesses embrace sustainability and environmental responsibility. We believe that by working together, we can create a more sustainable future for our planet.</p>
+  <p className="max-w-xs text-sm">Planecious is a platform dedicated to helping businesses embrace sustainability and environmental responsibility. We believe that by working together, we can create a more sustainable future for our planet.</p> */}
         {/* <div className="flex flex-row gap-4">
            
 
@@ -68,7 +68,7 @@ export default function Footer() {
             And Live Life Cleaner By Making Earth Greener.
           </p>
         </div> */}
-      </div>
+      {/* </div>
       <div className="flex flex-wrap">
         <div className="flex flex-col gap-8">
           <p className="font-bold">Get involved</p>
@@ -102,19 +102,10 @@ export default function Footer() {
             matter
           </p>
         </div>
-   
-      {/* <div className="flex flex-wrap">
-        <div className="flex flex-col gap-8">
-          <p>Get involved</p>
-          <div className="flex flex-col gap-2 text-s">
-            <li className="list-none">Contact us</li>
-            <li className="list-none">Join the community</li>
-            <li className="list-none">About us</li>
-          </div>
-        </div>
-      </div> */}
+    */}
+
  
-    </div>
+    {/* </div> */}
     <div className="w-full h-4 " >
       <p className="text-sm text-center">© 2024 Planecious. All rights reserved.</p>
     </div>

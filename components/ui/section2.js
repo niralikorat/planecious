@@ -93,8 +93,11 @@ export default function Section2() {
   ];
 
   return (
-    <div className="flex flex-col">
-      <div
+    <div className="flex flex-col items-center">
+    <img src="https://planeciousleaders.org/images/planecious-1.jpg" className="w-full"/>
+    <img src="https://planeciousleaders.org/images/planecious-2.jpg" className="w-full"/>
+    <img src="https://planeciousleaders.org/images/planecious-3.jpg" className="w-full"/>
+      {/* <div
         className="section2 py-24 px-4 md:px-12 flex flex-col text-black bg-opacity-50"
         id="about"
       >
@@ -122,14 +125,13 @@ export default function Section2() {
             >
               <img src={data.imgUrl} className="w-[120px]" alt={data.title} />
               <p>{data.title}</p>
-              {/* <p>{data.detail}</p> */}
-              {/* <Link className='underline' href={'/'}>TAKE ACTION</Link> */}
+           
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex flex-col md:flex-row">
+      {/* <div className="flex flex-col md:flex-row">
         <div className="flex flex-row items-center bgPrimary w-full lg:w-2/5">
           <div className="flex flex-col text-white justify-center items-start gap-4 px-10 lg:px-20 py-32 ">
             <p className="example -rotate-6 text-md">E-book</p>
@@ -147,25 +149,40 @@ export default function Section2() {
           <div className="triangle-right"></div>
         </div>
         <img src={"/ebookBanner.jpg"} className="w-full lg:w-3/5" alt="img" />
-      </div>
+      </div> */}
 
       <div
-        className="flex flex-col md:flex-row bgPodcast p-4 md:px-20 py-32 justify-between gap-10"
+        className="flex flex-col md:flex-row bgPodcast p-4 md:px-20 py-20  gap-10"
         id="walkTheTalk"
       >
-        <div className="flex flex-col gap-4 items-start justify-center  ">
-          <p className="example -rotate-6 text-md">Latest</p>
-          <p className="font-semibold text-4xl text-black">Walk The Talk</p>
-          <p className="max-w-md">
+        <div className="flex flex-col gap-4 items-center justify-center  ">
+          {/* <p className="example -rotate-6 text-md">Latest</p> */}
+          <p className="font-semibold text-5xl md:text-7xl textPrimary">Walk The Talk</p>
+          {/* <p className="max-w-md text-center">
             Discover people changing the face of our planet for good. <br></br>Tune in
             and listen to their sure-to-inspire stories.
           </p>
-          <Link href={'https://www.youtube.com/@PlaneciousLeaders'} target="_blank"  rel="noopener noreferrer" className='bgPrimary px-6 py-2 rounded-3xl text-sm font-semibold text-white mt-2 hover:scale-105'>Explore More</Link>
+          */}
         </div>
-        <CarouselComponent videoList={videoData} autoPlay={true} />
+        {/* <CarouselComponent videoList={videoData} autoPlay={true} /> */}
+<div className="flex justify-center items-center">
+        
+        </div>
+       
       </div>
-
-      <div
+<div className="flex flex-wrap justify-center gap-8 px-4">
+<iframe className="w-full md:w-1/2 h-full sm:h-[400px]" src="https://www.youtube.com/embed/-EAfiPdMoTY?si=AHJoUbrg2FrtdqYL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe className="w-full md:w-1/2 h-full sm:h-[400px]" src="https://www.youtube.com/embed/THWwSB6GnFE?si=nbqkNnnndHRuS009" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe className="w-full md:w-1/2 h-full sm:h-[400px]" src="https://www.youtube.com/embed/Cl4W9d1xpNs?si=zaKGD7GZ0C_YiWDj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe className="w-full md:w-1/2 h-full sm:h-[400px]" src="https://www.youtube.com/embed/Cl4W9d1xpNs?si=Zq8nbqqEgAToUdxW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe className="w-full md:w-1/2 h-full sm:h-[400px]" src="https://www.youtube.com/embed/6Reaa3gH9dc?si=iYS_3E-46EwJA99v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe className="w-full md:w-1/2 h-full sm:h-[400px]" src="https://www.youtube.com/embed/WJUo697afdc?si=VIMuJ2jFlwfJCwbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div className="flex items-center justify-center py-12">
+ <Link href={'https://www.youtube.com/@PlaneciousLeaders'} target="_blank"  rel="noopener noreferrer" className='bgPrimary px-6 py-3 rounded-3xl text-sm font-semibold text-white mt-2 hover:scale-105 '>View More</Link>
+ </div>
+   
+      {/* <div
         className="bgSection3 flex flex-col py-32 md:px-20 gap-4 items-center text-white"
         id="JoinUs"
       >
@@ -174,8 +191,7 @@ export default function Section2() {
           Action and Change starts from here,<br></br>
           Be a part of Planecious.
         </p>
-        {/* <CarouselComponent videoList={communityPosts} autoPlay={true} /> */}
-        {/* <button className='bgPrimary px-10 py-4 rounded-3xl text-sm font-semibold text-white mt-2'>JOIN COMMUNITY</button> */}
+     
         <Link
           className="bgPrimary px-6 py-4 rounded-3xl text-xs font-semibold text-white mt-2 hover:scale-105"
           href={"https://www.linkedin.com/groups/8147680/"}
@@ -184,8 +200,8 @@ export default function Section2() {
         >
           JOIN HERE
         </Link>
-      </div>
-      <section
+      </div> */}
+      {/* <section
         className="flex flex-col lg:flex-row justify-evenly h-full lg:h-[70vh]"
         id="Initiatives"
       >
@@ -212,13 +228,7 @@ export default function Section2() {
           </div>
         </div>
 
-        {/* <div className='flex flex-col w-auto '>
-          <div className='flex flex-col gap-4 bg-white h-auto'>
-  
-          </div>
         
-
-        </div> */}
         <div className="flex flex-col  h-[70vh]">
           <img src="/graciaBanner.jpg" className="h-1/2 " />
           <div className="flex flex-col gap-16 justify-center items-start  py-10  px-10 lg:px-20 bg-orange-400 h-1/2">
@@ -226,7 +236,7 @@ export default function Section2() {
               An initiative to empower brands purposefully.
             </p>
             <div className="flex flex-col gap-2 text-white">
-              {/* <p className='example'>Abhishek Raj</p> */}
+     
               <Link
                 href={"https://graciamarcom.com/"}
                  target="_blank"
@@ -237,7 +247,7 @@ export default function Section2() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

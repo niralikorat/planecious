@@ -7,16 +7,16 @@ import Hamburger from 'hamburger-react';
 import Image from 'next/image';
 
 const navItems = [
-  { name: 'About', href: '#about' },
-  { name: 'Walk The Talk', href: '#walkTheTalk' },
-  { name: 'Initiatives', href: '#Initiatives' },
+  // { name: 'About', href: '#about' },
+  // { name: 'Walk The Talk', href: '#walkTheTalk' },
+  // { name: 'Initiatives', href: '#Initiatives' },
   // { name: 'Join Now', href: '#JoinUs' },
 ];
 
 const Navbar = () => {
   const pathname = usePathname();
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
-  const [navbarBg, setNavbarBg] = useState('bg-transparent text-white');
+  const [navbarBg, setNavbarBg] = useState('bg-white text-black');
 
   useEffect(() => {
   
@@ -24,7 +24,7 @@ const Navbar = () => {
       if (window.scrollY > 50) {
         setNavbarBg('bg-white shadow-md text-black');
       } else {
-        setNavbarBg('bg-transparent text-white');
+        setNavbarBg('bg-white text-black');
 
       }
     };
