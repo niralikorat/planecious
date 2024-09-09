@@ -66,7 +66,7 @@ const Navbar = () => {
 
       {/* Overlay Navigation */}
       {isOverlayOpen && (
-        <div className="fixed inset-x-0 bg-transparent bg-opacity-70 h-screen p-8 md:p-20 text-[#37ACC5] flex flex-col justify-between bgNav">
+        <div className="fixed inset-x-0 bg-transparent bg-opacity-70 h-screen p-8 md:p-20 text-[#000] flex flex-col gap-40 bgNav">
           <div className="flex flex-col gap-4 md:gap-8 font-semibold">
             {navItems.map((item) => (
               <Link key={item.name} href={item.href} className="text-4xl md:text-5xl hover:font-bold hover:textPrimary" onClick={closeSideNav}>
