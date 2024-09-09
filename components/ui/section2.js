@@ -198,7 +198,7 @@ export default function Section2() {
           <div className="flex flex-col lg:flex-row w-screen lg:w-auto lg:h-[46vh]">
             <img src="dekoratus.jpg" className="w-full lg:w-1/2" />
             <div className="flex flex-col gap-4 justify-center items-start bgSection3card px-10 lg:px-20 py-20 lg:py-8 w-full lg:w-1/2 ">
-              <p className="font-semibold text-2xl xl:text-3xl text-black  text-start gradientText max-w-md">
+              <p className="font-semibold text-2xl 2xl:text-3xl text-black  text-start gradientText max-w-md">
                 A healthier planet, happier people,Our mission in action.
               </p>
               <Link
