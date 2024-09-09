@@ -244,7 +244,7 @@ background-attachment: fixed;
 
 
 .bgNav{
-  /* background: black; */
+  background: black;
 
   -webkit-backdrop-filter: blur(40px);
   backdrop-filter: blur(40px);
