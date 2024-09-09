@@ -2,9 +2,9 @@ import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
-  return (
-    <div className="flex flex-col">
-    <div className="flex flex-col md:flex-row justify-between items-start  bg-white text-black p-4 py-20 md:p-20 shadow-md gap-12">
+  return ( 
+    <div className="flex flex-col bg-white">
+    <div className="flex flex-col md:flex-row justify-between items-start   text-black p-4 py-20 md:p-20  gap-12">
 
       <div className="flex flex-col gap-8">
        <img
