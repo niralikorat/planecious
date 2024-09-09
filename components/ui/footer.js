@@ -11,8 +11,8 @@ export default function Footer() {
         </div>
            
             <div className='flex flex-col'>
-                <p>Lets Transform The World Together.</p>
-               <p> And Live Life Cleaner By Making Earth Greener.</p>
+                <p className='text-sm'>Lets Transform The World Together.</p>
+               <p className='text-sm'> And Live Life Cleaner By Making Earth Greener.</p>
             </div>
         </div>
         <div className='flex flex-wrap'>
@@ -48,7 +48,7 @@ export default function Footer() {
     </div>
   
 </div>
-<div className='flex flex-col gap-4'>
+<div className='flex flex-col gap-8'>
 <img src="/planecious.svg" alt='Planecious Logo' className='w-[128px] ' />
   <div className='flex flex-row gap-4'>
 

@@ -32,7 +32,7 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
       ssr={true}
       slidesToSlide={1}
       swipeable
-      removeArrowOnDeviceType={["tablet", "mobile"]}
+      removeArrowOnDeviceType={["tablet", "mobile",'desktop']}
     >
       {videoList.map((video, index) => (
         <div
@@ -46,7 +46,7 @@ const CarouselComponent = ({ videoList, autoPlay }) => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-              className="w-full h-full"
+              className="h-[214px] w-full"
               loading="lazy"
             ></iframe>
           </div>
