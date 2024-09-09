@@ -78,10 +78,10 @@
 
 .section2{
   background-color: #fff;
-  background-image: url("/bgAbout.jpg");
-  background-position:center right;
+  background-image: url("https://earthcare.qodeinteractive.com/wp-content/uploads/2022/06/main-home-bg-2.png");
+  background-position:bottom left;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 

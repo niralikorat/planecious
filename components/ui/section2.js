@@ -72,7 +72,7 @@ export default function Section2() {
 
   return (
     <div className='flex flex-col'>
-      <div className='section2 py-24 px-4 md:px-12 flex flex-col text-black' id='about'>
+      <div className='section2 py-24 px-4 md:px-12 flex flex-col text-black bg-opacity-50' id='about'>
         <div className='flex flex-col gap-8 justify-center items-center'>
           <p className='example text-md text-center p-4 -rotate-12'>ABOUT US</p>
           <p className='max-w-2xl text-center text-sm'>We represent a community of optimists who strive to make a difference. Planecious turns
@@ -151,7 +151,7 @@ future the planet deserves.</p>
 
         </div> */}
         <div className='flex flex-col  h-[70vh]'>
-          <img src='/graciaBanner.jpg' className='h-1/2'/>
+          <img src='/graciaBanner.jpg' className='h-1/2 '/ >
           <div className='flex flex-col gap-16 justify-center items-start  py-10  px-10 lg:px-20 bg-orange-400 h-1/2'>
           <p className='font-semibold text-2xl 2xl:text-3xl text-white  max-w-lg text-start'>An initiative to empower brands purposefully.</p>
           <div className='flex flex-col gap-2 text-white'>
