@@ -108,7 +108,7 @@ export default function Section2() {
             build towards the future the planet deserves.
           </p>
           <p className="text-5xl font-semibold text-center text-[#37ACC5]">
-            An initiative for change by aligning
+            An Initiative For Change By Aligning
           </p>
         </div>
         <div className="flex flex-wrap gap-16 lg:gap-20 xl:gap-28 justify-center items-center ">
@@ -192,7 +192,7 @@ export default function Section2() {
         <div className="flex flex-col w-full">
           <div className="flex flex-col gap-4 py-10 px-10 lg:px-20 justify-center h-full ">
             <p className="font-semibold text-4xl text-black   text-start">
-              Key to a More Eco-friendly world !!!
+            Our Other Initiatives
             </p>
           </div>
           <div className="flex flex-col lg:flex-row w-screen lg:w-auto lg:h-[46vh]">
@@ -206,7 +206,7 @@ export default function Section2() {
                 href={"https://dekoratus.com/"}
                 target="_blank"
               >
-                VISIT US
+                Dekoratus
               </Link>
             </div>
           </div>
@@ -229,7 +229,7 @@ export default function Section2() {
               {/* <p className='example'>Abhishek Raj</p> */}
               <Link
                 href={"https://graciamarcom.com/"}
-                className="text-md hover:underline"
+                className="text-md underline"
               >
                 GRACIA MARCOM
               </Link>
