@@ -191,7 +191,7 @@ export default function Section2() {
       >
         <div className="flex flex-col w-full">
           <div className="flex flex-col gap-4 py-10 px-10 lg:px-20 justify-center h-full ">
-            <p className="font-semibold text-4xl text-black   text-start">
+            <p className="font-semibold text-4xl text-black   text-center">
             Our Other Initiatives
             </p>
           </div>
@@ -206,7 +206,7 @@ export default function Section2() {
                 href={"https://dekoratus.com/"}
                 target="_blank"
               >
-                Dekoratus
+                DEKORATUS
               </Link>
             </div>
           </div>
