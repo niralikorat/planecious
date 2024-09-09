@@ -229,6 +229,7 @@ export default function Section2() {
               {/* <p className='example'>Abhishek Raj</p> */}
               <Link
                 href={"https://graciamarcom.com/"}
+                 target="_blank"
                 className="text-md underline"
               >
                 GRACIA MARCOM
